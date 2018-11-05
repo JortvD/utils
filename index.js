@@ -9,5 +9,9 @@ module.exports = class UtilsManager {
 
 	use(name, utilities) {
 		this[name] = utilities;
+
+		for(let utility of utilities) {
+			utility = utility.bind(this);
+		}
 	}
 }
