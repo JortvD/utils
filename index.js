@@ -1,4 +1,4 @@
-module.exports = class UtilsManager {
+class UtilsManager {
 	constructor() {
 		let utils = ["path", "crypto", "array", "generate", "process", "platform"];
 
@@ -15,3 +15,5 @@ module.exports = class UtilsManager {
 		}
 	}
 }
+
+module.exports = new UtilsManager();
