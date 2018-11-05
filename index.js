@@ -10,8 +10,8 @@ class UtilsManager {
 	use(name, utilities) {
 		this[name] = utilities;
 
-		for(let utility of utilities) {
-			utility = utility.bind(this);
+		for(let utility in utilities) {
+			utilities[utility] = utilities[utility].bind(this);
 		}
 	}
 }
