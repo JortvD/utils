@@ -1,6 +1,6 @@
 {
 	"name": "@ijo-sm/utils",
-	"version": "0.1.2",
+	"version": "0.1.3",
 	"description": "The utility manager for IJO",
 	"main": "index.js",
 	"repository": {
